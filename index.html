@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose Garden - Premium Artisanal Roses & Botanical Gardens</title>
+  <meta name="description" content="Discover handcrafted luxury roses, bespoke garden design, flower planting, and floral arrangement services at Rose Garden.">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Toast Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zm1.5-4.5c0 1.38-1.12 2.5-2.5 2.5S9.5 13.38 9.5 12s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5z"/></svg>
+        <span>Rose Garden</span>
+      </a>
+
+      <!-- Main Desktop Navigation -->
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#roses" class="nav-link">Roses</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- User Auth / Action Area -->
+      <div class="header-actions">
+        <div id="headerAuthArea">
+          <!-- Populated dynamically by app.js -->
+        </div>
+
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Open Navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="drawerBackdrop" class="drawer-backdrop"></div>
+  <aside id="mobileDrawer" class="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <span class="brand-logo" style="font-size:1.3rem;">Rose Garden</span>
+      <button onclick="document.getElementById('mobileDrawer').classList.remove('open'); document.getElementById('drawerBackdrop').classList.remove('open');" style="background:none; border:none; font-size:1.5rem; cursor:pointer;">✕</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#roses" class="nav-link">Roses Catalog</a></li>
+      <li><a href="#services" class="nav-link">Our Services</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#contact" class="nav-link">Contact Us</a></li>
+      <li><a href="#dashboard" class="nav-link">My Account</a></li>
+    </ul>
+  </aside>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: HOME                                                            -->
+  <!-- ========================================================================== -->
+  <main id="view-home" class="page-view active">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-badge">
+            <span>✨</span> Handcrafted Botanical Elegance
+          </div>
+          <h1 class="hero-title">Timeless Beauty in Every <span>Rose Bloom</span></h1>
+          <p class="hero-tagline">
+            Welcome to Rose Garden. Explore our hand-cultivated heirloom rose catalog, bespoke landscape architectural design, and luxury floral services.
+          </p>
+          <div class="hero-buttons">
+            <a href="#roses" class="btn btn-primary btn-lg">Explore Roses Catalog</a>
+            <a href="#contact" class="btn btn-secondary btn-lg">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1000&q=80" alt="Rose Garden Estate">
+          <div class="hero-floating-card">
+            <div style="font-size:1.8rem;">🌹</div>
+            <div>
+              <h4 style="font-size:0.95rem; font-weight:700; color:var(--primary-green); margin:0;">100% Organic & Healthy</h4>
+              <span style="font-size:0.8rem; color:var(--text-muted);">Hand-picked heirloom varieties</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Roses Section -->
+    <section class="section-padding" style="background:var(--cream-surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Curated Collection</span>
+          <h2 class="section-title">Featured Rose Varieties</h2>
+          <p class="section-desc">Discover our most celebrated English garden and hybrid tea roses, renowned for intense fragrance and disease resistance.</p>
+        </div>
+
+        <div id="featuredRosesGrid" class="grid-responsive">
+          <!-- Dynamic cards -->
+        </div>
+
+        <div style="text-align:center; margin-top:3rem;">
+          <a href="#roses" class="btn btn-outline btn-lg">View Full Catalog (12+ Varieties)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Craftsmanship & Passion</span>
+          <h2 class="section-title">Why Choose Rose Garden</h2>
+          <p class="section-desc">We combine decades of horticultural expertise with sustainable cultivation practices.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <div class="pillar-icon">🌱</div>
+            <h3 class="font-serif" style="font-size:1.3rem; margin-bottom:0.5rem;">Organic Cultivation</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Nurtured using 100% natural organic compost and eco-friendly disease prevention.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">✂️</div>
+            <h3 class="font-serif" style="font-size:1.3rem; margin-bottom:0.5rem;">Master Florists</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Our landscape architects bring over 20 years of bespoke garden planning experience.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">🚚</div>
+            <h3 class="font-serif" style="font-size:1.3rem; margin-bottom:0.5rem;">Hand-Picked Freshness</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Cut to order directly from our nursery fields to ensure longest vase life.</p>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon">💚</div>
+            <h3 class="font-serif" style="font-size:1.3rem; margin-bottom:0.5rem;">Lifetime Care Advice</h3>
+            <p style="font-size:0.9rem; color:var(--text-muted);">Every rose plant comes with free plant diagnostic advice and seasonal pruning guides.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="section-padding" style="background:var(--cream-surface);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Heartfelt Feedback</span>
+          <h2 class="section-title">What Our Customers Say</h2>
+          <p class="section-desc">Read reviews from home estate owners, wedding planners, and botanical enthusiasts.</p>
+        </div>
+
+        <div id="testimonialsGrid" class="testimonials-grid">
+          <!-- Dynamic Testimonials -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: ABOUT                                                           -->
+  <!-- ========================================================================== -->
+  <main id="view-about" class="page-view">
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Heritage</span>
+          <h2 class="section-title">About Rose Garden</h2>
+          <p class="section-desc">Founded in 1998, Rose Garden began as a passion project to preserve vintage heirloom English roses and create romantic botanical spaces.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; margin-bottom:4rem;">
+          <div>
+            <h3 class="font-serif" style="font-size:2.2rem; margin-bottom:1rem; color:var(--primary-green);">Our Story</h3>
+            <p style="color:var(--text-muted); margin-bottom:1rem; line-height:1.7;">
+              What started as a small 2-acre rose patch has grown into a premier 25-acre botanical estate. We cultivate over 120 historic and modern rose varieties, supplying garden lovers, boutique hotels, and grand event organizers across the country.
+            </p>
+            <p style="color:var(--text-muted); line-height:1.7;">
+              Our commitment remains simple: to deliver unmatched vigor, captivating perfumes, and sustainable garden practices in every plant and arrangement we craft.
+            </p>
+          </div>
+          <div style="border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-lg);">
+            <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80" alt="Rose Nursery">
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem;">
+          <div style="background:var(--cream-surface); padding:2.5rem; border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+            <h3 class="font-serif" style="font-size:1.6rem; color:var(--rose-deep); margin-bottom:0.75rem;">Our Mission</h3>
+            <p style="color:var(--text-muted); line-height:1.6;">To inspire and enrich lives through the beauty of artisanal roses, providing exceptional plant quality, sustainable organic practices, and personalized landscape design services.</p>
+          </div>
+          <div style="background:var(--cream-surface); padding:2.5rem; border-radius:var(--radius-md); box-shadow:var(--shadow-sm);">
+            <h3 class="font-serif" style="font-size:1.6rem; color:var(--primary-green); margin-bottom:0.75rem;">Our Vision</h3>
+            <p style="color:var(--text-muted); line-height:1.6;">To be the world's most trusted destination for rose lovers, championing heirloom plant conservation, horticultural education, and breathtaking floral artistic design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: ROSES CATALOG                                                   -->
+  <!-- ========================================================================== -->
+  <main id="view-roses" class="page-view">
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Nursery Catalog</span>
+          <h2 class="section-title">Explore Our Rose Catalog</h2>
+          <p class="section-desc">Search and filter our complete nursery catalog of bare-root and container rose plants.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <!-- Search -->
+          <div class="search-input-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="roseSearchInput" placeholder="Search roses by name, scent, or color...">
+          </div>
+
+          <!-- Category Filter -->
+          <div class="filter-group">
+            <select id="roseCategoryFilter" class="form-select">
+              <option value="All">All Categories</option>
+              <option value="Hybrid Tea">Hybrid Tea</option>
+              <option value="David Austin">David Austin</option>
+              <option value="Grandiflora">Grandiflora</option>
+              <option value="Floribunda">Floribunda</option>
+              <option value="Garden Roses">Garden Roses</option>
+              <option value="Climbing Roses">Climbing Roses</option>
+              <option value="Miniature">Miniature</option>
+            </select>
+
+            <!-- Price Filter -->
+            <select id="rosePriceFilter" class="form-select">
+              <option value="All">All Prices</option>
+              <option value="under30">Under $30</option>
+              <option value="30to60">$30 - $60</option>
+              <option value="over60">Over $60</option>
+            </select>
+
+            <!-- Availability Filter -->
+            <select id="roseAvailFilter" class="form-select">
+              <option value="All">All Availability</option>
+              <option value="In Stock">In Stock</option>
+              <option value="Pre-Order">Pre-Order</option>
+              <option value="Seasonal">Seasonal</option>
+            </select>
+
+            <!-- Sort -->
+            <select id="roseSortFilter" class="form-select">
+              <option value="featured">Featured First</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name">Name A-Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+          <span id="roseResultsCount" style="font-size:0.9rem; color:var(--text-muted); font-weight:600;">12 roses found</span>
+          <button onclick="App.resetRoseFilters()" class="btn btn-outline btn-sm">Reset Filters</button>
+        </div>
+
+        <!-- Catalog Grid -->
+        <div id="rosesCatalogGrid" class="grid-responsive">
+          <!-- Dynamic cards -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: SERVICES                                                        -->
+  <!-- ========================================================================== -->
+  <main id="view-services" class="page-view">
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Horticultural Services</span>
+          <h2 class="section-title">Our Specialized Services</h2>
+          <p class="section-desc">From initial 3D garden architectural planning to seasonal rose care and wedding floral styling.</p>
+        </div>
+
+        <div id="servicesGrid" class="grid-responsive">
+          <!-- Dynamic Service Cards -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: GALLERY                                                         -->
+  <!-- ========================================================================== -->
+  <main id="view-gallery" class="page-view">
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Visual Inspiration</span>
+          <h2 class="section-title">Rose Garden Photo Gallery</h2>
+          <p class="section-desc">Explore photography from our nursery fields, private client gardens, and grand event floral setups.</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div id="galleryTabs" class="tab-buttons">
+          <button onclick="App.setGalleryCategory('All')" class="tab-btn active">All Photos</button>
+          <button onclick="App.setGalleryCategory('Roses')" class="tab-btn">Roses</button>
+          <button onclick="App.setGalleryCategory('Gardens')" class="tab-btn">Gardens</button>
+          <button onclick="App.setGalleryCategory('Events')" class="tab-btn">Events</button>
+          <button onclick="App.setGalleryCategory('Arrangements')" class="tab-btn">Arrangements</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div id="galleryGrid" class="gallery-grid">
+          <!-- Dynamic Gallery Items -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: CONTACT                                                         -->
+  <!-- ========================================================================== -->
+  <main id="view-contact" class="page-view">
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get in Touch</span>
+          <h2 class="section-title">Contact Rose Garden</h2>
+          <p class="section-desc">Have a question about rose varieties or want to schedule a garden design consultation? We'd love to hear from you.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:3.5rem; align-items:start;">
+          <!-- Contact Form -->
+          <div style="background:var(--cream-surface); padding:2.5rem; border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); border:1px solid rgba(30,58,43,0.06);">
+            <h3 class="font-serif" style="font-size:1.8rem; margin-bottom:1.5rem; color:var(--primary-green);">Send Us a Message</h3>
+            <form id="contactForm">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Full Name *</label>
+                <input type="text" id="contactName" name="name" class="form-control" required placeholder="e.g. Eleanor Vance">
+              </div>
+
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+                <div class="form-group">
+                  <label class="form-label" for="contactEmail">Email Address *</label>
+                  <input type="email" id="contactEmail" name="email" class="form-control" required placeholder="e.g. eleanor@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="contactPhone">Phone Number</label>
+                  <input type="tel" id="contactPhone" name="phone" class="form-control" placeholder="+1 (555) 000-0000">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactSubject">Subject</label>
+                <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="e.g. Garden Design Consultation">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contactMessage">Your Message *</label>
+                <textarea id="contactMessage" name="message" rows="5" class="form-control" required placeholder="Tell us about your garden project or inquiry..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Information & Map -->
+          <div>
+            <div style="background:var(--cream-surface); padding:2.5rem; border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); border:1px solid rgba(30,58,43,0.06); margin-bottom:2rem;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem; color:var(--primary-green);">Nursery & Office</h3>
+              
+              <div style="display:flex; flex-direction:column; gap:1.25rem;">
+                <div style="display:flex; gap:1rem;">
+                  <span style="font-size:1.4rem; color:var(--rose-deep);">📍</span>
+                  <div>
+                    <strong style="display:block; color:var(--primary-green);">Address:</strong>
+                    <span style="color:var(--text-muted);">742 Evergreen Terrace, Floral Valley, CA 90210</span>
+                  </div>
+                </div>
+
+                <div style="display:flex; gap:1rem;">
+                  <span style="font-size:1.4rem; color:var(--rose-deep);">📞</span>
+                  <div>
+                    <strong style="display:block; color:var(--primary-green);">Phone:</strong>
+                    <span style="color:var(--text-muted);">+1 (800) 555-ROSE / +1 (800) 555-7673</span>
+                  </div>
+                </div>
+
+                <div style="display:flex; gap:1rem;">
+                  <span style="font-size:1.4rem; color:var(--rose-deep);">✉️</span>
+                  <div>
+                    <strong style="display:block; color:var(--primary-green);">Email:</strong>
+                    <span style="color:var(--text-muted);">hello@rosegarden.com</span>
+                  </div>
+                </div>
+
+                <div style="display:flex; gap:1rem;">
+                  <span style="font-size:1.4rem; color:var(--rose-deep);">🕒</span>
+                  <div>
+                    <strong style="display:block; color:var(--primary-green);">Opening Hours:</strong>
+                    <span style="color:var(--text-muted);">Mon - Sat: 8:00 AM - 7:00 PM<br>Sun: 9:00 AM - 5:00 PM</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual Map Placeholder -->
+            <div style="background:var(--primary-green-dark); color:#FFF; height:240px; border-radius:var(--radius-lg); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:2rem; position:relative; overflow:hidden;">
+              <div style="font-size:2.5rem; margin-bottom:0.5rem;">🗺️</div>
+              <h4 class="font-serif" style="font-size:1.4rem; color:#FFF; margin-bottom:0.4rem;">Visit Our Rose Estate</h4>
+              <p style="font-size:0.85rem; color:#94A3B8;">Floral Valley Estate • 25 Acres of Blooming Roses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: USER DASHBOARD                                                  -->
+  <!-- ========================================================================== -->
+  <main id="view-dashboard" class="page-view">
+    <section class="section-padding">
+      <div class="container">
+        <!-- Header banner -->
+        <div style="background:var(--cream-surface); padding:2rem 2.5rem; border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); margin-bottom:2.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+          <div style="display:flex; align-items:center; gap:1.5rem;">
+            <div id="dashUserAvatar" class="user-avatar">S</div>
+            <div>
+              <h2 id="dashUserName" class="font-serif" style="font-size:1.8rem; margin:0; color:var(--primary-green);">User Account</h2>
+              <span id="dashUserEmail" style="color:var(--text-muted); font-size:0.9rem;">user@example.com</span>
+            </div>
+          </div>
+          <button onclick="App.logout()" class="btn btn-outline btn-sm">Log Out</button>
+        </div>
+
+        <div class="dashboard-container">
+          <!-- Sidebar -->
+          <div class="dashboard-sidebar">
+            <ul id="dashMenu" class="dash-menu">
+              <li class="dash-link active" data-tab="favorites" onclick="App.switchDashTab('favorites')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                Favorite Roses
+              </li>
+              <li class="dash-link" data-tab="requests" onclick="App.switchDashTab('requests')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Service Requests
+              </li>
+              <li class="dash-link" data-tab="profile" onclick="App.switchDashTab('profile')">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Profile Settings
+              </li>
+            </ul>
+          </div>
+
+          <!-- Main Dashboard Content -->
+          <div>
+            <!-- Stats Counters -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon">♡</div>
+                <div>
+                  <div id="statFavCount" class="stat-val">0</div>
+                  <div class="stat-lbl">Favorite Roses</div>
+                </div>
+              </div>
+
+              <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <div>
+                  <div id="statReqCount" class="stat-val">0</div>
+                  <div class="stat-lbl">Service Requests</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab: Favorites -->
+            <div id="dashTab-favorites" class="dash-tab-content">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Your Favorited Roses</h3>
+              <div id="dashFavsGrid" class="grid-responsive">
+                <!-- Dynamic cards -->
+              </div>
+            </div>
+
+            <!-- Tab: Service Requests -->
+            <div id="dashTab-requests" class="dash-tab-content" style="display:none;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Service Request History</h3>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Ref ID</th>
+                      <th>Service</th>
+                      <th>Preferred Date</th>
+                      <th>Status</th>
+                      <th>Submitted Date</th>
+                    </tr>
+                  </thead>
+                  <tbody id="dashRequestsTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab: Profile Settings -->
+            <div id="dashTab-profile" class="dash-tab-content" style="display:none;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Edit Profile Information</h3>
+              <div style="background:var(--cream-surface); padding:2rem; border-radius:var(--radius-md); border:1px solid rgba(30,58,43,0.06);">
+                <form onsubmit="App.saveProfile(event)">
+                  <div class="form-group">
+                    <label class="form-label" for="profileNameInput">Full Name</label>
+                    <input type="text" id="profileNameInput" class="form-control" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="profileEmailInput">Email Address</label>
+                    <input type="email" id="profileEmailInput" class="form-control" disabled style="background:var(--cream-dark);">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="profilePhoneInput">Phone Number</label>
+                    <input type="tel" id="profilePhoneInput" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="profileAddressInput">Address</label>
+                    <input type="text" id="profileAddressInput" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Save Changes</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- PAGE VIEW: ADMIN DASHBOARD                                                 -->
+  <!-- ========================================================================== -->
+  <main id="view-admin" class="page-view">
+    <section class="section-padding">
+      <div class="container">
+        <div style="background:var(--primary-green-dark); color:#FFF; padding:2rem 2.5rem; border-radius:var(--radius-lg); margin-bottom:2.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+          <div>
+            <span style="font-size:0.8rem; text-transform:uppercase; color:var(--rose-accent); font-weight:700;">Administrative Portal</span>
+            <h2 class="font-serif" style="font-size:2rem; color:#FFF; margin:0;">Rose Garden Control Center</h2>
+          </div>
+          <button onclick="App.logout()" class="btn btn-secondary btn-sm">Admin Logout</button>
+        </div>
+
+        <div class="dashboard-container">
+          <!-- Sidebar -->
+          <div class="dashboard-sidebar">
+            <ul id="adminMenu" class="dash-menu">
+              <li class="dash-link active" data-tab="roses" onclick="App.switchAdminTab('roses')">🌹 Manage Roses</li>
+              <li class="dash-link" data-tab="services" onclick="App.switchAdminTab('services')">✂️ Services</li>
+              <li class="dash-link" data-tab="gallery" onclick="App.switchAdminTab('gallery')">🖼️ Gallery</li>
+              <li class="dash-link" data-tab="requests" onclick="App.switchAdminTab('requests')">📅 Bookings</li>
+              <li class="dash-link" data-tab="inquiries" onclick="App.switchAdminTab('inquiries')">✉️ Inquiries</li>
+              <li class="dash-link" data-tab="users" onclick="App.switchAdminTab('users')">👥 Users</li>
+              <li class="dash-link" data-tab="testimonials" onclick="App.switchAdminTab('testimonials')">⭐ Reviews</li>
+            </ul>
+          </div>
+
+          <!-- Main Admin Content -->
+          <div>
+            <!-- Overview KPI -->
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-icon">🌹</div>
+                <div>
+                  <div id="adminStatRoses" class="stat-val">0</div>
+                  <div class="stat-lbl">Roses in Catalog</div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">✂️</div>
+                <div>
+                  <div id="adminStatServices" class="stat-val">0</div>
+                  <div class="stat-lbl">Active Services</div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <div>
+                  <div id="adminStatRequests" class="stat-val">0</div>
+                  <div class="stat-lbl">Bookings Received</div>
+                </div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-icon">✉️</div>
+                <div>
+                  <div id="adminStatInquiries" class="stat-val">0</div>
+                  <div class="stat-lbl">Inquiries</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab: Roses Management -->
+            <div id="adminTab-roses" class="admin-tab-content">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+                <h3 class="font-serif" style="font-size:1.6rem;">Manage Roses Catalog</h3>
+                <button onclick="App.openAddRoseModal()" class="btn btn-primary btn-sm">+ Add New Rose</button>
+              </div>
+
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Name</th>
+                      <th>Category</th>
+                      <th>Price</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminRosesTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab: Services -->
+            <div id="adminTab-services" class="admin-tab-content" style="display:none;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Manage Offered Services</h3>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Image</th>
+                      <th>Service Name</th>
+                      <th>Starting Price</th>
+                      <th>Features</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminServicesTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab: Gallery -->
+            <div id="adminTab-gallery" class="admin-tab-content" style="display:none;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+                <h3 class="font-serif" style="font-size:1.6rem;">Manage Gallery Photos</h3>
+                <button onclick="App.openAddGalleryModal()" class="btn btn-primary btn-sm">+ Add Photo</button>
+              </div>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Photo</th>
+                      <th>Title</th>
+                      <th>Category</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminGalleryTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab: Bookings / Requests -->
+            <div id="adminTab-requests" class="admin-tab-content" style="display:none;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Customer Service Requests</h3>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Ref ID</th>
+                      <th>Customer</th>
+                      <th>Service</th>
+                      <th>Date</th>
+                      <th>Update Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminRequestsTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab: Inquiries -->
+            <div id="adminTab-inquiries" class="admin-tab-content" style="display:none;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Customer Inquiries</h3>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Subject</th>
+                      <th>Message</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminInquiriesTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab: Users -->
+            <div id="adminTab-users" class="admin-tab-content" style="display:none;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Registered Users</h3>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Email</th>
+                      <th>Role</th>
+                      <th>Phone</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminUsersTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Tab: Testimonials -->
+            <div id="adminTab-testimonials" class="admin-tab-content" style="display:none;">
+              <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:1.5rem;">Customer Testimonials</h3>
+              <div class="table-responsive">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Avatar</th>
+                      <th>Name</th>
+                      <th>Role</th>
+                      <th>Rating</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="adminTestimonialsTbody">
+                    <!-- Dynamic rows -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================== -->
+  <!-- MODALS SYSTEM                                                              -->
+  <!-- ========================================================================== -->
+  
+  <!-- Rose Detail Modal -->
+  <div id="roseDetailModal" class="modal-overlay">
+    <div class="modal-card modal-card-lg">
+      <button class="modal-close-btn">&times;</button>
+      <div id="roseDetailModalBody">
+        <!-- Filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Booking Modal -->
+  <div id="bookingModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="font-serif" style="font-size:1.8rem; margin-bottom:0.5rem; color:var(--primary-green);">Request Service / Consultation</h3>
+      <p style="color:var(--text-muted); font-size:0.9rem; margin-bottom:1.5rem;">Complete the form below and our horticultural team will schedule your appointment.</p>
+      
+      <form id="bookingForm">
+        <div class="form-group">
+          <label class="form-label" for="bookingNameInput">Full Name *</label>
+          <input type="text" id="bookingNameInput" name="name" class="form-control" required placeholder="e.g. Sarah Jenkins">
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label class="form-label" for="bookingEmailInput">Email Address *</label>
+            <input type="email" id="bookingEmailInput" name="email" class="form-control" required placeholder="sarah@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookingPhoneInput">Phone Number *</label>
+            <input type="tel" id="bookingPhoneInput" name="phone" class="form-control" required placeholder="+1 (555) 000-0000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookingServiceSelect">Select Service *</label>
+          <select id="bookingServiceSelect" name="serviceId" class="form-select" style="width:100%;" required>
+            <option value="srv-1">Garden Design Consultation ($450)</option>
+            <option value="srv-2">Rose Planting & Soil Tuning ($180)</option>
+            <option value="srv-3">Garden Maintenance Subscription ($120/mo)</option>
+            <option value="srv-4">Rose Care & Pest Doctor ($95)</option>
+            <option value="srv-5">Event & Wedding Flower Decoration ($850+)</option>
+            <option value="srv-6">Custom Flower Arrangements ($75+)</option>
+          </select>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label class="form-label" for="bookingDateInput">Preferred Date *</label>
+            <input type="date" id="bookingDateInput" name="preferredDate" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="bookingTimeSelect">Preferred Time *</label>
+            <select id="bookingTimeSelect" name="preferredTime" class="form-select" style="width:100%;">
+              <option value="Morning (9:00 AM - 12:00 PM)">Morning (9am - 12pm)</option>
+              <option value="Afternoon (1:00 PM - 5:00 PM)">Afternoon (1pm - 5pm)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="bookingMessageInput">Special Notes / Requirements</label>
+          <textarea id="bookingMessageInput" name="message" rows="3" class="form-control" placeholder="Describe your garden space or request details..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-rose btn-lg" style="width:100%;">Submit Booking Request</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Booking Confirmation Modal -->
+  <div id="bookingConfirmModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn">&times;</button>
+      <div id="bookingConfirmBody"></div>
+    </div>
+  </div>
+
+  <!-- Auth: Login Modal -->
+  <div id="loginModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="font-serif" style="font-size:1.8rem; margin-bottom:0.5rem; color:var(--primary-green);">Sign In to Rose Garden</h3>
+      <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:1.5rem;">Access your saved favorite roses and service request history.</p>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label class="form-label" for="loginEmail">Email Address</label>
+          <input type="email" id="loginEmail" name="email" class="form-control" required placeholder="sarah@example.com">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" name="password" class="form-control" required placeholder="••••••••">
+        </div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; font-size:0.85rem;">
+          <a href="#" onclick="App.openAuthModal('forgot'); return false;" style="color:var(--rose-deep);">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%; margin-bottom:1rem;">Sign In</button>
+
+        <div style="text-align:center; font-size:0.85rem; color:var(--text-muted);">
+          Don't have an account? <a href="#" onclick="App.openAuthModal('signup'); return false;" style="color:var(--rose-deep); font-weight:600;">Create Account</a>
+        </div>
+
+        <div style="background:var(--cream-bg); padding:0.75rem; border-radius:var(--radius-sm); margin-top:1.5rem; font-size:0.75rem; color:var(--text-muted);">
+          <strong>Demo Login Credentials:</strong><br>
+          Customer: <code>sarah@example.com</code> / <code>password123</code><br>
+          Admin: <code>admin@rosegarden.com</code> / <code>admin128</code>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Auth: Signup Modal -->
+  <div id="signupModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="font-serif" style="font-size:1.8rem; margin-bottom:0.5rem; color:var(--primary-green);">Create an Account</h3>
+      <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:1.5rem;">Join Rose Garden to save favorites and manage garden requests.</p>
+
+      <form id="signupForm">
+        <div class="form-group">
+          <label class="form-label" for="signupName">Full Name *</label>
+          <input type="text" id="signupName" name="name" class="form-control" required placeholder="Sarah Jenkins">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="signupEmail">Email Address *</label>
+          <input type="email" id="signupEmail" name="email" class="form-control" required placeholder="sarah@example.com">
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label class="form-label" for="signupPass">Password *</label>
+            <input type="password" id="signupPass" name="password" class="form-control" required placeholder="••••••••">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="signupConfirmPass">Confirm Password *</label>
+            <input type="password" id="signupConfirmPass" name="confirmPassword" class="form-control" required placeholder="••••••••">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-rose btn-lg" style="width:100%; margin-bottom:1rem;">Create Account</button>
+
+        <div style="text-align:center; font-size:0.85rem; color:var(--text-muted);">
+          Already have an account? <a href="#" onclick="App.openAuthModal('login'); return false;" style="color:var(--rose-deep); font-weight:600;">Sign In</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Auth: Forgot Password Modal -->
+  <div id="forgotModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="font-serif" style="font-size:1.6rem; margin-bottom:0.5rem;">Reset Password</h3>
+      <p style="color:var(--text-muted); font-size:0.85rem; margin-bottom:1.5rem;">Enter your email address and we'll send password recovery instructions.</p>
+      
+      <form onsubmit="event.preventDefault(); App.showToast('Recovery link sent to your email!', 'info'); App.closeModal('forgotModal');">
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-control" required placeholder="your@email.com">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Recovery Email</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin: Add/Edit Rose Modal -->
+  <div id="adminRoseModal" class="modal-overlay">
+    <div class="modal-card modal-card-lg">
+      <button class="modal-close-btn">&times;</button>
+      <h3 id="roseFormTitle" class="font-serif" style="font-size:1.8rem; margin-bottom:1.5rem;">Add New Rose</h3>
+
+      <form id="adminRoseForm" onsubmit="App.saveRoseForm(event)">
+        <input type="hidden" id="adminRoseId">
+        
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label class="form-label">Rose Name *</label>
+            <input type="text" id="adminRoseName" class="form-control" required placeholder="e.g. Velvet Royal Crimson">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Category *</label>
+            <select id="adminRoseCategory" class="form-select" style="width:100%;" required>
+              <option value="Hybrid Tea">Hybrid Tea</option>
+              <option value="David Austin">David Austin</option>
+              <option value="Grandiflora">Grandiflora</option>
+              <option value="Floribunda">Floribunda</option>
+              <option value="Garden Roses">Garden Roses</option>
+              <option value="Climbing Roses">Climbing Roses</option>
+              <option value="Miniature">Miniature</option>
+            </select>
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label class="form-label">Price ($) *</label>
+            <input type="number" step="0.5" id="adminRosePrice" class="form-control" required placeholder="38.00">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Availability Status</label>
+            <select id="adminRoseAvail" class="form-select" style="width:100%;">
+              <option value="In Stock">In Stock</option>
+              <option value="Pre-Order">Pre-Order</option>
+              <option value="Seasonal">Seasonal</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Image URL *</label>
+          <input type="url" id="adminRoseImage" class="form-control" required placeholder="https://images.unsplash.com/photo-...">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Short Description *</label>
+          <input type="text" id="adminRoseShortDesc" class="form-control" required placeholder="Brief catalog summary...">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Full Description</label>
+          <textarea id="adminRoseDesc" rows="3" class="form-control" placeholder="Detailed bloom characteristics, history, fragrance notes..."></textarea>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label class="form-label">Fragrance Rating</label>
+            <input type="text" id="adminRoseFragrance" class="form-control" placeholder="e.g. High (Strong Damask)">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Sunlight Requirements</label>
+            <input type="text" id="adminRoseSunlight" class="form-control" placeholder="e.g. Full Sun (6+ hrs)">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Save Rose</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin: Add Gallery Photo Modal -->
+  <div id="adminGalleryModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close-btn">&times;</button>
+      <h3 class="font-serif" style="font-size:1.8rem; margin-bottom:1.5rem;">Add Photo to Gallery</h3>
+
+      <form id="adminGalleryForm" onsubmit="App.saveGalleryForm(event)">
+        <div class="form-group">
+          <label class="form-label">Photo Title *</label>
+          <input type="text" id="adminGalTitle" class="form-control" required placeholder="e.g. English Country Walkway">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Category</label>
+          <select id="adminGalCategory" class="form-select" style="width:100%;">
+            <option value="Roses">Roses</option>
+            <option value="Gardens">Gardens</option>
+            <option value="Events">Events</option>
+            <option value="Arrangements">Arrangements</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Image URL *</label>
+          <input type="url" id="adminGalImage" class="form-control" required placeholder="https://images.unsplash.com/...">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Caption / Description</label>
+          <input type="text" id="adminGalCaption" class="form-control" placeholder="Short description for lightbox...">
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Add Photo</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox-modal">
+    <div class="lightbox-content">
+      <button onclick="App.closeLightbox()" class="lightbox-close">&times;</button>
+      <button onclick="App.navigateLightbox(-1)" class="lightbox-btn lightbox-prev">&#10094;</button>
+      
+      <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="Gallery Lightbox">
+      </div>
+      
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle" class="font-serif" style="font-size:1.4rem; color:#FFF; margin-bottom:0.2rem;"></h4>
+        <p id="lightboxCaption" style="font-size:0.9rem; color:#94A3B8;"></p>
+      </div>
+
+      <button onclick="App.navigateLightbox(1)" class="lightbox-btn lightbox-next">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span>🌹</span> Rose Garden
+          </div>
+          <p class="footer-desc">
+            Cultivating artisanal heirloom roses, luxury floral arrangements, and romantic garden architectural landscapes since 1998.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" class="social-btn" aria-label="Instagram">📷</a>
+            <a href="https://pinterest.com" target="_blank" class="social-btn" aria-label="Pinterest">📌</a>
+            <a href="https://facebook.com" target="_blank" class="social-btn" aria-label="Facebook">📘</a>
+            <a href="https://youtube.com" target="_blank" class="social-btn" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#roses">Roses Catalog</a></li>
+            <li><a href="#gallery">Photo Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Garden Design</a></li>
+            <li><a href="#services">Rose Planting</a></li>
+            <li><a href="#services">Garden Maintenance</a></li>
+            <li><a href="#services">Rose Care & Health</a></li>
+            <li><a href="#services">Event Decorations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Visit Us</h4>
+          <p style="font-size:0.9rem; color:#94A3B8; line-height:1.6; margin-bottom:1rem;">
+            742 Evergreen Terrace<br>
+            Floral Valley, CA 90210<br>
+            Phone: +1 (800) 555-ROSE
+          </p>
+          <span style="font-size:0.85rem; color:var(--rose-accent);">Open Daily: 8:00 AM - 7:00 PM</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rose Garden. All Rights Reserved. Artisanal Roses & Botanical Design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Logic -->
+  <script src="app.js"></script>
+</body>
+</html>

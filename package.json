@@ -1,0 +1,20 @@
+{
+  "name": "rose-garden",
+  "version": "1.0.0",
+  "description": "Rose Garden - Luxury Artisanal Roses & Botanical Design Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File server.ps1",
+    "serve": "powershell -ExecutionPolicy Bypass -File server.ps1",
+    "dev": "powershell -ExecutionPolicy Bypass -File server.ps1"
+  },
+  "keywords": [
+    "rose-garden",
+    "flowers",
+    "botanical",
+    "ecommerce",
+    "landscape-design"
+  ],
+  "author": "Rose Garden Team",
+  "license": "ISC"
+}

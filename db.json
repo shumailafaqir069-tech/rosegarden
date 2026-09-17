@@ -1,0 +1,424 @@
+{
+  "roses": [
+    {
+      "id": "rose-1",
+      "name": "Velvet Royal Crimson",
+      "category": "Hybrid Tea",
+      "shortDescription": "Classic deep crimson red rose with rich, intense fragrance and long velvet petals.",
+      "description": "The Velvet Royal Crimson is the crown jewel of classic garden roses. Celebrated for its deep blood-red velvety petals, long sturdy stems ideal for vase arrangements, and an intoxicating classic damask perfume that fills any garden or room.",
+      "price": 38.00,
+      "availability": "In Stock",
+      "sunlight": "Full Sun (6+ hours)",
+      "fragrance": "High (Strong Damask)",
+      "height": "4 - 5 feet",
+      "featured": true,
+      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-2",
+      "name": "Graceful Pink David Austin",
+      "category": "David Austin",
+      "shortDescription": "English garden rose with full rosette blooms in delicate pastel blush pink.",
+      "description": "A magnificent English shrub rose featuring cupped rosettes packed with over 90 delicate blush pink petals. Offers a fruity myrrh fragrance with notes of honey and vanilla. Highly disease resistant and repeat blooms throughout the season.",
+      "price": 45.00,
+      "availability": "In Stock",
+      "sunlight": "Full Sun to Partial Shade",
+      "fragrance": "Very High (Fruity Myrrh)",
+      "height": "3 - 4 feet",
+      "featured": true,
+      "image": "https://images.unsplash.com/photo-1534710961216-75c88202f43e?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-3",
+      "name": "Sunburst Amber Gold",
+      "category": "Grandiflora",
+      "shortDescription": "Vibrant golden-apricot rose with citrus notes and lush dark glossy foliage.",
+      "description": "Radiant as the morning sun, Sunburst Amber Gold displays dramatic clusters of warm apricot-yellow blooms with copper undertones. Possesses a clean citrus fragrance and exceptional heat tolerance.",
+      "price": 32.50,
+      "availability": "In Stock",
+      "sunlight": "Full Sun",
+      "fragrance": "Medium (Fresh Citrus)",
+      "height": "5 - 6 feet",
+      "featured": true,
+      "image": "https://images.unsplash.com/photo-1559563458-527698bf5295?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-4",
+      "name": "Avalanche Pure White",
+      "category": "Floribunda",
+      "shortDescription": "Pristine snow-white blooms that bloom continuously in dense fragrant clusters.",
+      "description": "Symbolizing purity and elegance, Avalanche Pure White is a floribunda rose producing massive sprays of porcelain-white blossoms with subtle hint of ivory center. Perfect for weddings, borders, and fresh cut arrangements.",
+      "price": 29.00,
+      "availability": "In Stock",
+      "sunlight": "Full Sun",
+      "fragrance": "Medium (Sweet Tea)",
+      "height": "3 - 4 feet",
+      "featured": true,
+      "image": "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-5",
+      "name": "Coral Sunset Peony Rose",
+      "category": "Garden Roses",
+      "shortDescription": "Peony-shaped rose with coral peach tones that gracefully fade to warm apricot.",
+      "description": "An enchanting garden rose with dense peony-style ruffles. Begins as a deep sunset coral pink before softening into warm peach and cream hues. Excellent choice for romantic garden landscapes.",
+      "price": 42.00,
+      "availability": "Pre-Order",
+      "sunlight": "Full Sun",
+      "fragrance": "High (Sweet Clove & Apple)",
+      "height": "4 feet",
+      "featured": false,
+      "image": "https://images.unsplash.com/photo-1548625361-185b306b4b47?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-6",
+      "name": "Lavender Mist Enchantment",
+      "category": "Hybrid Tea",
+      "shortDescription": "Rare mauve-lavender rose with subtle silver sheen and strong spiced fragrance.",
+      "description": "A rare collector's delight, Lavender Mist boasts spiral-shaped blooms of soft mauve violet with a silvery outer glow. Famous for its powerful citrus spice fragrance and elegant long cut stems.",
+      "price": 48.00,
+      "availability": "In Stock",
+      "sunlight": "Full Sun to Partial Shade",
+      "fragrance": "Very High (Citrus Spice)",
+      "height": "4 - 5 feet",
+      "featured": true,
+      "image": "https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-7",
+      "name": "Eden Arch Climbing Rose",
+      "category": "Climbing Roses",
+      "shortDescription": "Vigorous climber adorned with heavy pale pink and cream nostalgic blooms.",
+      "description": "Voted world's favorite rose, the Eden Climber cascades gracefully over arches, pergolas, and garden walls. Generates hundreds of large cupped pink and white blossoms from spring to late autumn.",
+      "price": 54.00,
+      "availability": "In Stock",
+      "sunlight": "Full Sun",
+      "fragrance": "Medium (Gentle Old Rose)",
+      "height": "10 - 12 feet (Climber)",
+      "featured": false,
+      "image": "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-8",
+      "name": "Midnight Passion Burgundy",
+      "category": "Grandiflora",
+      "shortDescription": "Mysterious near-black dark red velvet rose with dark green foliage.",
+      "description": "Dramatically dark burgundy petals that appear nearly black under shadow and open into rich magenta crimson. A showstopper in modern floral landscape designs.",
+      "price": 36.00,
+      "availability": "In Stock",
+      "sunlight": "Full Sun",
+      "fragrance": "High (Spicy Anise & Rose)",
+      "height": "5 feet",
+      "featured": false,
+      "image": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-9",
+      "name": "Sweet Peach Floribunda",
+      "category": "Floribunda",
+      "shortDescription": "Charming cluster rose with warm peach, salmon, and honey shades.",
+      "description": "Compact, bushy, and bursting with soft peach clusters. Perfect for patio containers, low garden hedges, and delicate flower garden borders.",
+      "price": 27.50,
+      "availability": "In Stock",
+      "sunlight": "Full Sun",
+      "fragrance": "Medium (Sweet Peach)",
+      "height": "2.5 - 3 feet",
+      "featured": false,
+      "image": "https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-10",
+      "name": "Golden Celebration David Austin",
+      "category": "David Austin",
+      "shortDescription": "Huge rich gold cupped flowers with tea rose aroma and arching growth.",
+      "description": "One of the largest flowered English roses, boasting majestic cup-shaped blooms in deep rich yellow gold. Emits a warm tea fragrance with notes of strawberry and sauterne wine.",
+      "price": 49.00,
+      "availability": "Seasonal",
+      "sunlight": "Full Sun",
+      "fragrance": "Very High (Tea & Strawberry)",
+      "height": "4.5 feet",
+      "featured": false,
+      "image": "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-11",
+      "name": "Miniature Ruby Jewel",
+      "category": "Miniature",
+      "shortDescription": "Petite ruby red rose plant perfect for indoor pots and patio tables.",
+      "description": "A micro-rose sensation! Petite ruby red blossoms bloom tirelessly on a compact 12-inch bush. Ideal for indoor windowsill displays, garden balconies, and gift planters.",
+      "price": 22.00,
+      "availability": "In Stock",
+      "sunlight": "Full Sun to Partial Sun",
+      "fragrance": "Light (Fresh)",
+      "height": "1 - 1.5 feet",
+      "featured": false,
+      "image": "https://images.unsplash.com/photo-1550950158-d0d960dff51b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "rose-12",
+      "name": "Heritage Blush Antique",
+      "category": "Garden Roses",
+      "shortDescription": "Heirloom style soft pink rose with classic quartered blossom center.",
+      "description": "Inspired by Victorian rose gardens, Heritage Blush displays perfect quartered blooms with translucent blush petals and an unmistakable antique perfume.",
+      "price": 39.50,
+      "availability": "In Stock",
+      "sunlight": "Full Sun",
+      "fragrance": "High (Classic Old Rose)",
+      "height": "4 feet",
+      "featured": false,
+      "image": "https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "services": [
+    {
+      "id": "srv-1",
+      "name": "Garden Design",
+      "shortDescription": "Bespoke rose garden architectural planning, soil preparation, and planting layouts tailored to your estate.",
+      "description": "Our master landscape architects craft custom rose garden designs that harmonize with your property architecture. We analyze soil pH, sunlight trajectory, drainage, and seasonal bloom cycles to curate a stunning rose landscape.",
+      "features": ["3D Visual Design Blueprint", "Soil Preparation & pH Tuning", "Architectural Planting Layouts", "Companion Plant Selection"],
+      "startingPrice": "$450.00",
+      "image": "https://images.unsplash.com/photo-1558904541-efa8c196b27d?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "srv-2",
+      "name": "Rose Planting",
+      "shortDescription": "Expert planting of bare-root and container roses with specialized organic soil amendments.",
+      "description": "Proper planting is the secret to thriving roses. Our horticultural team carefully prepares planting holes, infuses organic compost and mycorrhizal fungi, and anchors young rose roots for maximum vigor.",
+      "features": ["Bare-root & Pot Planting", "Mycorrhizal & Compost Treatment", "Mulching & Root Protection", "Initial Deep Hydration Treatment"],
+      "startingPrice": "$180.00",
+      "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "srv-3",
+      "name": "Garden Maintenance",
+      "shortDescription": "Scheduled seasonal pruning, organic fertilizing, weed control, and blooming care.",
+      "description": "Keep your rose garden vibrant year-round. Our monthly or seasonal care packages include expert winter/spring pruning, deadheading, soil aeration, and organic fertilizing.",
+      "features": ["Seasonal Spring/Winter Pruning", "Organic Feeding Schedule", "Deadheading & Sanitation", "Weed & Soil Management"],
+      "startingPrice": "$120.00 / month",
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "srv-4",
+      "name": "Rose Care & Health",
+      "shortDescription": "Diagnostic consultations and eco-friendly treatment for pests, black spot, and fungal diseases.",
+      "description": "Is your rose bush experiencing yellow leaves or black spot? Our plant doctors diagnose ailments and apply child- and pet-safe organic remedies to restore peak plant vitality.",
+      "features": ["Diagnostic Leaf & Soil Analysis", "Eco-friendly Organic Sprays", "Pest & Aphid Management", "Fungal Disease Eradication"],
+      "startingPrice": "$95.00",
+      "image": "https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "srv-5",
+      "name": "Event Flower Decoration",
+      "shortDescription": "Luxury rose floral styling for weddings, galas, anniversaries, and corporate events.",
+      "description": "Transform your event into a botanical wonderland. From grand rose archways and head table arrangements to romantic centerpieces, our floral artists design breathtaking floral atmospheres.",
+      "features": ["Grand Rose Archways", "Custom Centerpieces & Runners", "Bridal & Boutonnière Florals", "On-site Venue Styling & Teardown"],
+      "startingPrice": "$850.00",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "id": "srv-6",
+      "name": "Custom Flower Arrangements",
+      "shortDescription": "Handcrafted rose bouquets delivered fresh in signature presentation boxes or vases.",
+      "description": "Express love, gratitude, or celebration with our hand-picked artisan rose arrangements. Delivered fresh from our gardens in eco-friendly presentation boxes or ceramic vases.",
+      "features": ["Fresh Garden-Cut Selection", "Custom Color Palette Request", "Handwritten Calligraphy Card", "Same-Day Local Delivery Available"],
+      "startingPrice": "$75.00",
+      "image": "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=800&q=80"
+    }
+  ],
+  "gallery": [
+    {
+      "id": "gal-1",
+      "title": "Velvet Red Blooming Garden",
+      "category": "Roses",
+      "caption": "A spectacular summer bloom of Velvet Royal Crimson roses in our botanical estate.",
+      "image": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-2",
+      "title": "Blush Pink Rose Archway",
+      "category": "Gardens",
+      "caption": "Hand-carved iron gazebo adorned with climbing Eden roses and pink garden roses.",
+      "image": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-3",
+      "title": "Romantic Wedding Rose Arch",
+      "category": "Events",
+      "caption": "Luxury wedding ceremony setup featuring over 1,500 white and peach fresh garden roses.",
+      "image": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-4",
+      "title": "Signature Sunset Bouquet",
+      "category": "Arrangements",
+      "caption": "Artisanal bouquet combining David Austin pink roses with coral spray roses and eucalyptus.",
+      "image": "https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-5",
+      "title": "English Country Garden Walkway",
+      "category": "Gardens",
+      "caption": "Cobblestone pathway bordered by lush Floribunda and Grandiflora rose bushes.",
+      "image": "https://images.unsplash.com/photo-1558904541-efa8c196b27d?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-6",
+      "title": "Golden Hour Rose Dewdrops",
+      "category": "Roses",
+      "caption": "Close-up macro of morning dew resting on Sunburst Amber Gold rose petals.",
+      "image": "https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-7",
+      "title": "Grand Gala Floral Table Runner",
+      "category": "Events",
+      "caption": "Extravagant 20-foot rose runner for a corporate charity gala at the botanic glasshouse.",
+      "image": "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-8",
+      "title": "Porcelain White Flower Basket",
+      "category": "Arrangements",
+      "caption": "Rustic woven basket overflowing with pure white Avalanche roses and white lilies.",
+      "image": "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-9",
+      "title": "Lavender Rose Cottage Garden",
+      "category": "Roses",
+      "caption": "Rare lavender mist roses growing along a white picket cottage fence.",
+      "image": "https://images.unsplash.com/photo-1567696911980-2eed69a46042?auto=format&fit=crop&w=1200&q=80"
+    },
+    {
+      "id": "gal-10",
+      "title": "Botanical Glasshouse Nursery",
+      "category": "Gardens",
+      "caption": "Inside our climate-controlled propagation glasshouse where our roses are nurtured.",
+      "image": "https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=1200&q=80"
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "tst-1",
+      "name": "Eleanor Vance",
+      "role": "Estate Homeowner",
+      "rating": 5,
+      "comment": "Rose Garden transformed our backyard into a breathtaking English country rose haven. Their team selected disease-resistant varieties that bloom relentlessly. Highly recommended!",
+      "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "id": "tst-2",
+      "name": "Marcus & Sophia Sterling",
+      "role": "Wedding Clients",
+      "rating": 5,
+      "comment": "The floral archway and table arrangements for our wedding were beyond our wildest dreams. The scent of fresh David Austin roses filled the venue!",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "id": "tst-3",
+      "name": "Dr. Clara Hastings",
+      "role": "Botanical Enthusiast",
+      "rating": 5,
+      "comment": "As a rose collector, I am extremely particular about root health and cultivar authenticity. Rose Garden delivers the healthiest, most fragrant bare-root roses I have ever purchased.",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "id": "tst-4",
+      "name": "Julian Thorne",
+      "role": "Boutique Hotel Director",
+      "rating": 5,
+      "comment": "We subscribe to their weekly custom flower arrangements for our lobby. Our guests constantly compliment the fresh fragrance and stunning rose designs.",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+    },
+    {
+      "id": "tst-5",
+      "name": "Beatrice Montgomery",
+      "role": "Garden Club President",
+      "rating": 5,
+      "comment": "Their rose maintenance team saved my vintage climber from black spot disease. Professional, knowledgeable, and deeply passionate about roses!",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80"
+    }
+  ],
+  "users": [
+    {
+      "id": "usr-admin",
+      "name": "Rose Garden Admin",
+      "email": "admin@rosegarden.com",
+      "password": "admin128",
+      "role": "admin",
+      "phone": "+1 (800) 555-7673",
+      "address": "742 Evergreen Terrace, Floral Valley, CA"
+    },
+    {
+      "id": "usr-customer",
+      "name": "Sarah Jenkins",
+      "email": "sarah@example.com",
+      "password": "password123",
+      "role": "customer",
+      "phone": "+1 (555) 234-5678",
+      "address": "128 Rosewood Lane, Pasadena, CA"
+    }
+  ],
+  "favorites": [
+    {
+      "userId": "usr-customer",
+      "roseId": "rose-1"
+    },
+    {
+      "userId": "usr-customer",
+      "roseId": "rose-2"
+    }
+  ],
+  "service_requests": [
+    {
+      "id": "REQ-1001",
+      "userId": "usr-customer",
+      "userName": "Sarah Jenkins",
+      "userEmail": "sarah@example.com",
+      "userPhone": "+1 (555) 234-5678",
+      "serviceId": "srv-1",
+      "serviceName": "Garden Design",
+      "preferredDate": "2026-10-15",
+      "preferredTime": "Morning (9:00 AM - 12:00 PM)",
+      "message": "We would like a full 3D layout plan for our front yard garden with pink and white roses.",
+      "status": "Confirmed",
+      "createdAt": "2026-09-10T10:30:00Z"
+    },
+    {
+      "id": "REQ-1002",
+      "userId": "usr-customer",
+      "userName": "Sarah Jenkins",
+      "userEmail": "sarah@example.com",
+      "userPhone": "+1 (555) 234-5678",
+      "serviceId": "srv-6",
+      "serviceName": "Custom Flower Arrangements",
+      "preferredDate": "2026-09-25",
+      "preferredTime": "Afternoon (1:00 PM - 5:00 PM)",
+      "message": "Anniversary rose bouquet delivery with personalized message.",
+      "status": "Pending",
+      "createdAt": "2026-09-15T14:20:00Z"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "INQ-5001",
+      "name": "David Miller",
+      "email": "david.m@example.com",
+      "phone": "+1 (555) 987-6543",
+      "subject": "Wholesale Rose Nursery Order",
+      "message": "Hello, we operate a garden center in Northern California and would like to inquire about bare-root wholesale pricing for David Austin roses.",
+      "status": "New",
+      "createdAt": "2026-09-12T09:15:00Z"
+    },
+    {
+      "id": "INQ-5002",
+      "name": "Sarah Jenkins",
+      "email": "sarah@example.com",
+      "phone": "+1 (555) 234-5678",
+      "subject": "Soil pH Consultation Question",
+      "message": "Hi team, what is the ideal soil pH for planting the Velvet Royal Crimson roses?",
+      "status": "Replied",
+      "createdAt": "2026-09-14T11:45:00Z"
+    }
+  ]
+}
